@@ -2,16 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title></title>
   </head>
   <body>
-    <p>Test</p>
-    <div class="map-bg">
-      <div class="marker">
-        <a href="https://www.google.com.au/" target="_blank"><div class="pin"></div></a>
-        <div class="pin-effect"></div>
+    <div class="title">
+      <h3>Telstra Capability and Key Assets Dashboard (Demo V1)</h3>
+    </div>
+    <div class="section">
+      <img src="QLD_map.png" />
+      <div class="ring-container">
+        <div class="ringring-reef"></div>
+        <a href="JavaScript:newPopup('reef.html');"><div class="circle-reef"></div></a>
+
+        <div class="ringring-yatala"></div>
+        <a href="JavaScript:newPopup('https://app.powerbi.com/view?r=eyJrIjoiODU0MjBiNDAtZWNiZS00ZWU2L
+        WJhMjUtZTE0NjE4MDRlY2RmIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+        FiMSJ9');"><div class="circle-yatala"></div></a>
+
+        <div class="ringring-CBD"></div>
+        <a href="JavaScript:newPopup('https://app.powerbi.com/view?r=eyJrIjoiODU0MjBiNDAtZWNiZS00ZWU2L
+        WJhMjUtZTE0NjE4MDRlY2RmIiwidCI6IjkyMzEzNWM0LWY1MjQtNDBhYy04MWIzLTAyZjhlZWJkMm
+        FiMSJ9');"><div class="circle-CBD"></div></a>
+
+        <div class="ringring-southbank"></div>
+        <a href="JavaScript:newPopup('southbank.html');"><div class="circle-southbank"></div></a>
       </div>
     </div>
+
+    <script type="text/javascript">
+    // Popup window code
+    function newPopup(url) {
+    	popupWindow = window.open(
+    		url,'popUpWindow','height=800,width=1400,left=50,top=50,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+    }
+    </script>
   </body>
 </html>
